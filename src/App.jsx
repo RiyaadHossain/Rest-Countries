@@ -32,7 +32,7 @@ const Countries = () => {
       <h4>Country: {country.length}</h4>
       <div className="grid">
       {
-        country.map(state => <Country name={state}></Country>)
+        country.map(state => <Country key={state.cca3} name={state}></Country>)
       }
       </div>
     </div>

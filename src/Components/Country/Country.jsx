@@ -2,8 +2,7 @@ import React from "react";
 import "./Country.css";
 
 const Country = (props) => {
-  console.log(props);
-  const { name, region, population, flags, unMember, landlocked, independent } = props.name;
+  const { name, region, population, flags, unMember, independent } = props.name;
   return (
     
       <div className="card">
