@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import Country from "./Components/Country/Country";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       </div>
 
       {/* Project */}
-      <div>
+      <div className="grid">
         <Countries></Countries>
       </div>
     </div>
@@ -30,7 +31,7 @@ const Countries = () => {
     <div>
       <h4>Country: {country.length}</h4>
       {
-        country.map(state => console.log(state))
+        country.map(state => <Country name={state}></Country>)
       }
     </div>
   )
