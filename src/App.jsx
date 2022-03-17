@@ -11,7 +11,7 @@ function App() {
       </div>
 
       {/* Project */}
-      <div className="grid">
+      <div>
         <Countries></Countries>
       </div>
     </div>
@@ -28,11 +28,13 @@ const Countries = () => {
   }, []);
 
   return (
-    <div>
+    <div >
       <h4>Country: {country.length}</h4>
+      <div className="grid">
       {
         country.map(state => <Country name={state}></Country>)
       }
+      </div>
     </div>
   )
 };
